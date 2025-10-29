@@ -1,0 +1,38 @@
+/* Utilidades responsive adicionales */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+  
+  /* Mejoras para dispositivos táctiles */
+  @media (max-width: 768px) {
+    .touch-target {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    .text-mobile-lg {
+      font-size: 1.125rem;
+    }
+    
+    .text-mobile-xl {
+      font-size: 1.25rem;
+    }
+  }
+  
+  /* Dark mode support (para futuras implementaciones) */
+  @media (prefers-color-scheme: dark) {
+    .dark-mode-support {
+      background-color: #1a202c;
+      color: #e2e8f0;
+    }
+  }
+}
